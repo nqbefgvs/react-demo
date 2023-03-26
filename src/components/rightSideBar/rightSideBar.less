@@ -1,0 +1,50 @@
+.wrapper {
+    width: 200px;
+    height: 100%;
+    border-left: 2px #3c464f solid;
+    position: relative;
+    transition: width 0.5s;
+
+    .senario-list {
+
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .senario {
+            height: 100px;
+            text-align: center;
+            white-space: nowrap;
+            border: #3c464f 1px solid;
+            margin: 25px 0;
+            line-height: 100px;
+
+            &.selected {
+                background-color: #999999;
+            }
+        }
+    }
+
+    &.hide {
+        width: 0;
+    }
+
+    .hide-btn {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        border: 2px #3c464f solid;
+        background: rgba(255, 255, 255, 1);
+
+        svg {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
